@@ -1,0 +1,102 @@
+@import url("style.css");
+
+
+/* 最新消息 */
+
+.middlenews {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+   
+  }
+  
+  .middlenews h1{
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 3px #999999;
+    margin-bottom: 50px;
+  }
+  
+  
+  
+  .news {
+    /* background: #ffffff ; */
+    /* border: 3px solid rgb(180, 180, 180); */
+    width: 440px;
+    height: 360px;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 40px 77px; 
+    overflow: hidden; 
+    
+  }
+  .news:hover{
+    border: 3px solid black;
+    border-bottom: 3px solid black ;
+    border-right: 4px solid black ;
+    top:5px;
+    left: 5px;
+  }
+  
+  .new1{
+    /* box-shadow: 3px 2px 3px rgba(65, 65, 65, 0.7); */
+  }
+  
+  .new1 img{
+    width: 440px;
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center ;
+    transition: .5s;
+   
+   
+  }
+  
+  
+  .new1 img:hover{
+    transform: scale(1.1);
+  }
+  
+    
+  .new1 h4{
+    padding: 5px 5px;
+    
+    
+  }
+
+    
+  .new1 h3{
+    font-size: 25px;
+    padding: 3px 3px;
+     
+  }
+  .new1 p{
+    font-size: 16px;
+    padding: 5px 5px;
+    padding-right: 0;
+    float: left;
+    
+    
+  
+  }
+
+  
+  .new1 a{
+    font-size: 18px;
+    padding-left: 180px;
+  }
+  
+  .new1 a .fas {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .news a:hover,.fas:hover{
+    color: #869DB3;
+  }
+  
+  
+  

@@ -1,0 +1,113 @@
+@import url("style.css");
+
+ /*購買頁面 */
+
+
+ .shop{
+    margin-top: 80px;
+    padding:80px 140px;
+    /* background-color: rgb(22, 22, 22); */
+    display: flex
+
+  }
+
+  .shop img{
+    height: 561px;
+    width: 675px;
+
+  }
+
+  .shop_test{
+    height: 561px;
+    width: 471px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+    padding-left: 100px;
+
+
+   
+  }
+
+
+  .shop h1{
+    font-size: 41px;
+    margin-bottom: 20px;
+  } 
+
+  .shop h5{
+    font-size: 25px;
+    color: rgb(14, 119, 119);
+    margin-bottom: 10px;
+  } 
+
+  .shop p{
+    width: 368px;
+    line-height: 1.6;
+    margin: 10px 0;
+    letter-spacing:2px;
+
+
+  }
+
+.shop .fas{
+  font-size: 20px;
+}
+
+.shop_test .box_1{
+  height: 55px;
+  display: flex;
+  margin: 20px 0;
+  
+
+}
+
+
+.decrase{
+    height: 55px;
+    width: 53px;
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 40px;
+    border-right: none;
+    float: left;
+    padding-left: 17px;
+    padding-top: 8px;
+    background-color: white;
+
+}
+
+.number{
+  height: 55px;
+  width: 73px;
+  border: 1px solid rgb(0, 0, 0);  
+  float: left; 
+}
+
+.plus{
+  height: 55px;
+  width: 53px;
+  border: 1px solid rgb(0, 0, 0);
+  line-height: 40px;
+  border-left: none;
+  padding-left: 17px;
+  padding-top: 8px;
+  background-color: white;
+  margin-right: 40px;
+
+
+} 
+
+
+
+button{
+  height: 55px;
+  width: 143px;
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  /* text-align: center; */
+  border: 1px solid #000000;
+
+}
+button:hover{
+  background-color: #F5C554;
+}

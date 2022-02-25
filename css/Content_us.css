@@ -1,0 +1,112 @@
+@import url("style.css");
+
+/* 聯絡我們 content us */
+
+
+.content{
+    margin: 0 auto;
+    position: relative;
+    height: 800px;
+    /* margin-top: 100px; */
+  
+    
+  
+  }
+  
+  .content h1{
+    font-size: 64px;
+    /* margin: 40px 0; */
+    text-align: center;
+    text-shadow: 2px 3px #999999;
+  
+  }
+  
+  .content h5{
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 16px;
+    
+  
+    
+   
+    
+  
+  }
+  
+  
+  form{
+    margin-bottom: 100px;
+    position: absolute;
+    top:191px;
+    left: 400px;
+    
+  
+  
+  }
+  form .text{
+    float: left;
+    margin: 20px;
+    
+   
+    
+  
+  }
+  
+  form .input{
+    float: left;
+    margin: 20px;
+    height: 100%;
+  
+  
+  }
+  
+  form p{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom:29px;
+   
+    
+    
+  }
+  
+  form input{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    min-width:400px;
+    max-width:500px;
+    padding:10px;
+    border: 3px solid black;
+    border-bottom: 4px solid black ;
+    border-right: 3.5px solid black ;
+  
+  
+  
+  }
+  
+  form .question{
+    min-width:400px;
+    max-width:500px;
+    min-height: 200px;
+    max-height: 300px;
+    margin-top: 25px;
+    font-size: 16px;
+    padding:10px;
+    border: 3px solid black;
+    border-bottom: 4px solid black ;
+    border-right: 3.5px solid black ;
+  
+   
+    
+  }
+  form .sub{
+    height: 46px;
+    min-width: 150px;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    
+  }
+  

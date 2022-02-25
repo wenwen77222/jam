@@ -1,0 +1,428 @@
+@import url("style.css");
+
+
+
+
+/* 裝飾叉子湯匙 */
+.Decorate{
+  position: absolute;
+  top: 850px;
+  right: -200px;
+  width: 100%;
+  height: 155px;
+  width: 575px;
+  transform: rotate(51deg);
+  animation-name:Decorate; 
+  animation-duration: 3s;   
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+}
+
+.Decorate:hover{
+  transform: rotate(47deg);
+}
+@keyframes Decorate{
+  0% {  top: 845px; }
+  50% { top: 865px; }
+  75% { top: 845px; }
+  100% { top: 865px; }
+}
+
+.Decorate2{
+  position: absolute;
+  top: 1885px;
+  left: -110px;
+  width: 100%;
+  height: 155px;
+  width: 526px;
+  transform: rotate(316deg);
+  animation-name:Decorate2; 
+  animation-duration: 3s;   
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+
+}
+
+.Decorate2:hover{
+  transform: rotate(310deg);
+}
+
+@keyframes Decorate2{
+  0% {  top: 1880px; }
+  50% { top: 1870px; }
+  75% { top: 1880px; }
+  100% { top: 1870; }
+}
+
+/*首頁 區塊1 */
+.top{
+    width: 1040px;
+    height: 520px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.top img{
+  height: 480px;
+  width: 557px;
+  margin-top: 20px;
+  margin-left: 20px;
+  object-fit: cover;
+  object-position: bottom right;
+  box-shadow: 8px 6px 7px rgba(0, 0, 0, 0.7); 
+
+  
+}
+
+.ph1{
+  position: relative;
+}
+
+.line{
+  height: 484px;
+  width: 556px;
+  position: absolute;
+  border: 3px solid black;
+  border-bottom: 4px solid black ;
+  border-right: 5px solid black ;
+  top:5px;
+  left: 5px;
+  
+}
+
+
+.list1{
+  margin: 20px;
+  margin-left: 60px;
+
+}
+
+.list1 h1{
+  margin: 20px 20px 10px;
+
+
+}
+
+.list1 h3{
+  margin: 0 20px 30px;
+
+}
+
+.list1 p{
+  margin: 20px;
+  line-height:1.6;
+
+}
+
+.list1{
+
+}
+
+.list1 a{
+  font-size: 16px;
+  font-style: normal;
+	display: block;
+	background-color:#F5C554;
+	width: 111px;
+	height: 43px;
+	text-align: center;
+	line-height: 40px;
+  margin-top: 40px;
+  margin-left: 246px;
+}
+
+
+@media screen and (max-width: 768px){
+  .top ,.top2{
+    margin: 0;
+    display: block;
+    background-color: #8a8a8a;
+
+    }
+    .top{
+      margin-bottom: 558px;
+    }
+    .top2{
+      flex-direction: column-reverse;
+    }
+  .ph1 ,.ph2{
+    margin: 0;
+    padding: 0;
+  }
+  .top img,.top2 img{
+    height: 480px;
+    width: 510px;
+    
+    
+  }
+  .line,.line2{
+    display: none;
+  }
+  .Decorate,.Decorate2{
+    display: none;
+
+  }
+
+  .list1,.list2{
+    width: 500px;
+    margin: 0;
+    margin: 10px;
+
+  }
+
+
+}
+
+  
+
+/* 首頁區塊2 */
+.top2{
+  width: 1040px;
+  height: 520px;
+  margin: 80px auto;
+  display: flex;
+}
+
+.top2 img{
+height: 480px;
+width: 557px;
+object-fit: cover;
+object-position: bottom;
+margin-top: 20px;
+margin-left: 20px;
+box-shadow: 8px 6px 7px rgba(0, 0, 0, 0.7); 
+
+}
+
+.ph2{
+position: relative;
+}
+
+.line2{
+height: 484px;
+width: 556px;
+position: absolute;
+border: 3px solid black;
+border-bottom: 4px solid black ;
+border-right: 5px solid black ;
+top:5px;
+left: 5px;
+
+
+}
+
+
+.list2{
+margin: 20px;
+margin-right: 40px;
+
+}
+
+.list2 h1{
+margin: 20px 20px 10px;
+
+
+}
+
+.list2 h3{
+margin: 0 20px 30px;
+
+}
+
+.list2 p{
+margin: 20px;
+line-height:1.6;
+
+}
+
+.list2{
+
+}
+
+.list2 a{
+font-size: 16px;
+font-style: normal;
+display: block;
+background-color:#F5C554;
+width: 111px;
+height: 43px;
+text-align: center;
+line-height: 40px;
+margin-top: 40px;
+margin-left: 246px;
+}
+
+/* 首頁輪播區塊-純天然*/
+
+.top3 {
+  height: 750px;
+  display: flex;
+  margin-top: 130px;
+  overflow: hidden;
+  position: relative; 
+  margin-bottom: 50px; 
+
+}
+
+.top3:hover{
+
+
+}
+
+/* 圖片 */
+.top3 img{
+  width: 320px;
+  height: 382px;
+  margin-right: 50px;
+  margin-top: 200px;
+  object-fit: cover;
+  object-position: bottom ;
+  box-shadow: 8px 6px 7px rgba(0, 0, 0, 0.7); 
+
+}
+
+.top3 img:hover{
+
+}
+
+
+
+.ph3,.ph5,.ph7{
+  position: relative;
+  margin-top: 40px;
+  /* animation: jam 5s infinite ease-in-out; */
+
+}
+
+.line3,.line5,.line7{
+  width: 322px;
+  height: 382px;
+  position: absolute;
+  border: 3px solid black;
+  top:189px;
+  left:-10px
+}
+
+.ph4,.ph6{
+  position: relative;
+  margin-top: 100px;
+  /* animation: jam 4s  5sinfinite ease-in-out; */
+
+
+}
+
+.ph3 ,.ph4,.ph5 ,.ph6,.ph7 {
+  animation: jam 10s infinite ease;
+}
+
+@keyframes jam{
+  0%{right: 0; transform: translateX(0); }
+  25%{right: 200px;}
+  50%{right: 500px;}
+  75%{right: 700px;}
+  100%{ right: 1000px; transform: translateX(-50%)}
+ }
+
+.line4,.line6{
+  width: 322px;
+  height: 382px;
+  position: absolute;
+  border: 3px solid black;
+  top: 189px;
+  left:-10px
+
+}
+
+.top3 .list3{
+  width: 450px;
+  height: 150px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:30px;
+  margin: auto;
+}
+/* 純天然的好滋味 */
+.top3 .list3 h1{
+  font-size: 64px;
+  position: absolute;
+  margin: 0 auto;
+  text-shadow:  2px 3px #F5C554 ;
+  color: #F5C554;
+   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #F5C554;
+
+  
+}
+
+.top3 .list3 h1:hover{
+  
+}
+
+/* yummy */
+.top3 .list3 h2{
+  position: absolute;
+  top: -1px;
+  left: -142px;
+  transform: rotate(347deg);
+  /* animation-name:yummy; 
+  animation-duration: 4s;   
+  animation-timing-function:linear;
+  animation-iteration-count:infinite; */
+}
+
+
+.top3 .list3 h2:hover{
+  transform: rotate(340deg);
+}
+
+/* @keyframes yummy{
+  0% {  opacity: 0;}
+  100% { opacity: 1; } 
+} */
+
+/* jams */
+.top3 .list3 h3{
+  font-weight: bold;
+  position: absolute;
+  top: -14px;
+  right: -86px;
+  transform: rotate(19deg);
+  /* animation-name:jams; 
+  animation-duration: 4s;
+  animation-delay: 2s;   
+  animation-timing-function:linear;
+  animation-iteration-count:infinite; */
+  
+}
+.top3 .list3 h3:hover{
+  transform: rotate(25deg);
+}
+
+
+/* @keyframes jams{
+  0% {  opacity: 0;}
+  100% { opacity: 1; } 
+} */
+
+/* 暢銷商品 */
+.top3 a{
+  font-size: 25px;
+  font-style: normal;
+  color: white;
+  text-shadow: 1px 2px #8a8a8a;
+  display: block;
+  background-color:#000000;
+  width: 121px;
+  height: 40px;
+  text-align: center;
+  line-height:1.6;
+  margin: 0 auto;
+  margin-top: 110px;
+  text-decoration: none;
+  }
+
+
+

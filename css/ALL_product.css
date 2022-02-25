@@ -1,0 +1,237 @@
+@import url("style.css");
+
+
+/* 搜尋列表 */
+  
+.top_search{
+  display: flex;
+  margin: 0 30px;
+  margin: 40px 0;
+}
+.search{
+  padding-left:1000px;
+  position: relative;
+  
+
+}
+.search input{
+  border: 3px solid;
+  height: 28px;
+  width: 211px;
+  font-size: 16px;
+  
+  
+}
+
+.search button{
+  border: none;
+  height: 19px;
+  width: 20px;
+  position: absolute;
+  top: 4px;
+  right: 112px;
+  background-color: white;
+}
+.search .fas{
+  font-size: 18px;
+  margin-top: 1px; 
+}
+
+
+
+/* 商品排序選單 */
+
+select{
+  height: 28px;
+  width: 100px;
+  text-align: center;
+  border: 3px solid black;
+  float:right;
+ 
+  
+}
+
+option{ 
+
+}
+
+
+
+
+/* 左邊商品列表 */
+
+
+.Aproduct{
+    display: flex;
+    padding-left: 100px;
+  
+    
+  }
+  
+  .list1_l{
+    width: 250px;
+    margin: 0 auto;
+    margin-right: 50px; 
+    /* margin-top: 50px; */
+   
+  }
+  
+  .list1_l li:hover{ 
+    font-style: normal;
+  }
+  
+  .list1_l li a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    line-height: 23.17px;
+    margin: 0px 10px ;  
+     
+    
+  }
+  
+  .list1_l li a:hover{
+      color: #657682;
+   
+  }
+  
+  .list1_l li:hover .list1_ll li {
+    position: relative;
+    
+  }
+  .list1_l ol{
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 80px;
+  
+  }
+  
+  
+  
+  .list1_l ol>.list1_l li a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+  
+  }
+  
+  
+  .list1_l li:hover ol {
+    display: block;
+  }
+  
+  .list1_l>li{
+    display: block;
+    margin: 10px 0;
+  }
+  
+  
+  
+  
+  
+  /* 中間商品 */
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-left: 80px;
+    /* margin-top: 50px; */
+    
+   
+  }
+  
+  .item{
+    width: 322px;
+    height: 440px;
+    text-align: center;
+    margin: 20px;
+   
+  }
+  /* .item:hover{
+    border: 3px solid black;
+
+  } */
+  
+  .products img{
+    width: 322px;
+    height: 321px;
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+    /* transition: .5s; */
+  
+  }
+
+  .products img:hover{
+    /* transform: scale(1.1); */
+   
+  }
+  
+  .products h4{
+    font-size: 16px;
+    margin-bottom: 15px;
+  
+    
+    
+  
+  
+  }
+  
+  .products p{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(7, 82, 82);
+    
+  
+  
+  }
+  .products p:hover{
+  
+  }
+  
+  .products a{
+    text-decoration:none
+    
+  }
+  
+  .products a h4:hover{
+    color: #869DB3;
+    text-decoration:underline;
+    
+  }
+  
+  
+  /* 最下面頁面連結 */
+  .page{
+   width: 1033px;
+    margin-left: 360px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .page a {
+    display: inline;
+    margin: 0 5px;
+   
+   
+  
+  }
+  
+  .page a .fas{
+  
+  }
+  
+  .page a:hover{
+    text-decoration: none;
+    color: #8a8a8a;
+    
+  }
+  
+  
+   
