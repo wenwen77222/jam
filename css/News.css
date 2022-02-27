@@ -4,9 +4,12 @@
 /* 最新消息 */
 
 .middlenews {
-    width: 1200px;
-    height: 1000px;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 1000px;
+    height: 100%;
     margin: 0 auto;
+    margin-bottom: 50px;
    
   }
   
@@ -99,4 +102,42 @@
   }
   
   
+
+  @media screen and (max-width: 768px){
+    .photo{
+      height: 300px;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .middlenews{
+      width: 390px;
+    }
+    .middlenews h1{
+      width: auto;
+      /* text-align: unset; */
+      margin: 0 auto;
+      margin-bottom: 38px;
+    }
+    .news{
+      /* display: flex; */
+      margin: 0;
+      width: 390px;
+      margin-bottom: 20px;
+    }
+    .news a {
+      padding: 0;
+      padding-left: 113px;
+      
+    }
+    .news .fas{
+      
+    }
+    .new1 h4 ,.new1 h3,.new1 p{
+      padding-left: 20px;
+      
+    }
+  }
   

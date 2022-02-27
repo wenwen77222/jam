@@ -7,7 +7,8 @@
 .store{
     /* margin-top: 120px; */
     margin-bottom: 100px;
-    clear: both
+    clear: both;
+    width: 100%;
     
     
   }
@@ -63,4 +64,33 @@
     letter-spacing: 1px;
     
     
+  }
+  
+  @media screen and (max-width: 768px){
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .store{
+      margin: 0;
+    }
+    .store h1{
+      margin: 0;
+      margin: 20px auto;
+    }
+    .all_map{
+      flex-direction: column;
+      width: auto;
+      padding: 0;
+    }
+    .all_map .text{
+      padding: 0 ;
+      height: auto;
+      width: auto;
+      margin: 30px auto;
+     
+    }
+
+
   }

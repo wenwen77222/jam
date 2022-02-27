@@ -9,8 +9,9 @@
   margin: 40px 0;
 }
 .search{
-  padding-left:1000px;
+  padding-left:900px;
   position: relative;
+  margin-right: 10px;
   
 
 }
@@ -29,7 +30,7 @@
   width: 20px;
   position: absolute;
   top: 4px;
-  right: 112px;
+  right: 7px;
   background-color: white;
 }
 .search .fas{
@@ -47,11 +48,14 @@ select{
   text-align: center;
   border: 3px solid black;
   float:right;
+  background-color: white;
  
   
 }
 
-option{ 
+ select option{ 
+
+
 
 }
 
@@ -168,7 +172,10 @@ option{
   }
 
   .products img:hover{
-    /* transform: scale(1.1); */
+     color: wheat ;
+    /* transform: scale(1.1);
+    transition: all 1s ease-out;
+    overflow:hidden; */
    
   }
   
@@ -183,8 +190,8 @@ option{
   }
   
   .products p{
-    font-size: 20px;
-    font-weight: 900;
+    /* font-size: 20px; */
+    font-weight: 500;
     color: rgb(7, 82, 82);
     
   
@@ -233,5 +240,67 @@ option{
     
   }
   
+  @media screen and (max-width: 768px){
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .top_search{
+      margin: 10px auto;
+      margin-top: 40px;
+    }
+
+    .search{
+      padding: 0;
+      margin: 0 auto;
+    }
+    select{
+      margin: 0 auto;
+    }
+    .list1_l{
+      margin: 0;
+      display: flex;
+      width: auto;
+      margin: 10px auto;
+    }
+    .list1_l li:hover .list1_ll li {
+      position: relative;
+      
+    }
+    .list1_l ol{
+      display: none;
+      position: absolute;
+      top: 31px;
+      left: -7px;
+    }
+    .list1_l li:hover ol {
+      display: block;
+    }
+    .list1_l li a{
+      margin: 0;
+    }
+
+    .Aproduct{
+      flex-direction: column;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      width: auto;
+     
+    }
+    .products{
+      margin: 0 auto;
+      margin-left: 25px;
+      
+    }
+    .item{
+      margin: 0;
+    }
+    .page{
+      margin: 0;
+      width: auto;
+    }
+  }
   
    

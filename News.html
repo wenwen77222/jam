@@ -13,11 +13,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/hamburger.css">
+
     </head>
 <body>
     
     
     <div class="head">
+        <div class="ham">
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
         <a href="index.html"><img src="./img/nojams_logo.png" alt="" ></a>
        <ul>
             <li>
@@ -105,7 +115,7 @@
              </div>
            </div>
             
-           </div>
+        </div>
 
 
 
@@ -113,23 +123,41 @@
 
   
            <div class="footer1">
-            <div class=text>
-            <p>No Jams 有限公司</p>
-            <div class="phone">
-            <p class="ph">電話 : 02-3123-1564</p><p>傳真 : 02-3861-1564</p>
-            </div>
-            <p>946 屏東縣恆春鎮天文路32號</p>
-            <p>Copyright © No Jams</p>
-            <div class="ficon">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fas fa-envelope"></i>
+                <div class=text>
+                <p>No Jams 有限公司</p>
+                <div class="phone">
+                <p class="ph">電話 : 02-3123-1564</p><p>傳真 : 02-3861-1564</p>
+                </div>
+                <p>946 屏東縣恆春鎮天文路32號</p>
+                <p>Copyright © No Jams</p>
+                <div class="ficon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-envelope"></i>
                 </div>
             </div>
            
 
-        </div>
-
-        
+       
+        <script src="./hamburger.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+    
+            $("button.hamburger").on("click", function(){
+                
+               
+                $(this).toggleClass("is-active");
+                $('.head ul').toggleClass("menu");
+                
+    
+                    // $("ul").slideDown();
+           
+                    
+                
+    
+            });    
+            
+            
+        </script>
     </body>
     </html>

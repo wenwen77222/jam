@@ -39,15 +39,18 @@
 }
 
 .top{
-  width: 1040px;
-  height: 520px;
+  width: 100%;
+  max-width: 1040px;
+  min-height: 520px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   
 }
 
 .top img{
-height: 480px;
+max-height: 480px;
+height: 100%;
 width: 557px;
 margin-top: 20px;
 margin-left: 20px;
@@ -79,6 +82,8 @@ left: 5px;
 margin: 20px;
 margin-left: 60px;
 margin-top: 100px;
+/* max-width: 300px;
+width: 100%; */
 
 }
 
@@ -248,3 +253,68 @@ line-height:1.6;
 
 }
 
+@media screen and (max-width: 768px){
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.photo1{
+  width: 390px;
+  height: 260px;
+
+
+}
+.top{
+  flex-direction: column;
+  width: 390px;
+  margin: 0;
+}
+.story .line{
+  display: none;
+}
+.story h1{
+  margin: 0;
+  margin: 38px 0;
+}
+
+.ph1 img{
+  margin: 0;
+  width: 390px;
+  height: 260px;
+}
+.story .list1{
+  margin: 0;
+}
+.middle{
+  height: auto;
+  width: 390px;
+}
+.middle h1{
+  font-size: 45px;
+
+}
+.middle1{
+  margin: 0;
+  position: relative;
+}
+
+.middle .step{
+  margin-bottom: 0;
+
+}
+.middle .lin{
+  /* height: 200px;
+  width: 390px;
+  position:absolute;
+  bottom: -49px; */
+  display: none;
+
+}
+.middle .bee{
+  position: absolute;
+  bottom: -56px;
+  left: 178px;
+}
+
+}

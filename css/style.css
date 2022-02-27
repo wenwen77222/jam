@@ -1,5 +1,4 @@
-@import url('reset.css');
-
+/* @import url("reset.css"); */
 
 *{
     margin: 0;
@@ -16,6 +15,8 @@ body{
     
     
 }
+
+
 
 
 /* head */
@@ -35,127 +36,25 @@ body{
   
 
 }
-@media screen and (min-width: 768px){
- 
-  
-}
-@media screen and (max-width: 768px){
-  .head >.icon{
-    display: none;
-    
-  }
-  .head{
-    height: auto;
-    position: relative;
-    
-  }
-  .head a img{
-    display: block;
-    width: 150px;
-    height: 65px;
-    margin: 3px;
-    margin-left: 130px;
-
-  }
-  .head .ham{
-    display: block;
-    margin-top: 7px;
-  }
-  
-  .head ul{
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: 150px;
-    position:absolute;
-    top: 71px;
-    /* border: 2px solid ; */
-    
-    /* left:-150px; */
-    /* flex-basis: 0; */
-    
-    
-
-  }
-  .head li{
-    margin: 5px 0;
-    padding-left: 30px;
-    border-bottom: 2px solid ;
-    width: 100%;
-    
-
-  }
- .head ol >li{
-   display: block;
-   
-   
-   margin-left: 80px;
-
- }
- 
-
-}
-.space{
-  display: none;
-}
-
-/* .head ul.-on{
-  /* flex-basis: 200px; */
-  /* left: 100px; */
-  /* transition: .5s; */
-   
-   
-/* 
- } */ 
-
-/* 圖片大小 */
-@media screen and (max-width: 575.98px){
-  .photo{
-    width: 110%;
-  }
-}
-@media screen and (min-width: 575.98px) and (max-width: 767.98px){
-  .photo{
-    width: 600px;
-  }
-}
-
-@media screen and (min-width: 767.98px) and (max-width: 991.8px){
-  .photo{
-    width: 800px;
-  }
-}
-@media screen and (min-width: 991.8px) and (max-width: 1199.8px){
-  .photo{
-    width: 980px;
-  }
-}
-
-@media screen and (min-width: 1199.8px) and (max-width: 1399.8px){
-  .photo{
-    width: 1150px;
-  }
-}
-@media screen and (min-width: 1319.8px){
-  .photo{
-    width: 1600px;
-  }
-}
-
 
 /* ------------漢堡 ------------- */
 .ham{
   display: none;
+
 }
 
 /* ------------logo *-------------*/
-img{
-  width: 239px;
-  height: 103px;
+.head a img{
+  max-width: 239px;
+  width: 100%;
+  max-height: 103px;
+  height: 100%;
   
 
 }
+
+
+
 
 /* 選單 */
 ul{
@@ -163,14 +62,16 @@ ul{
   margin: 0 auto;
   margin-top: 75px;
   margin-bottom: 100px;
+  display: flex;
   
  
 }
 
 li{ 
   position: relative;
-  display: inline-block;  
   font-style: normal;
+  text-decoration: none;
+  list-style-type: none;;
 
  
   
@@ -250,7 +151,6 @@ ol:hover>li {
 
 .footer1{
   height: 220px;
-  border-top: 1px solid rgba(199, 199, 199, 0.7);
   /* border: 1px solid violet; */
  
 
@@ -261,7 +161,7 @@ ol:hover>li {
 }
 
 .footer1 .text{
-  width:500px;
+  border-top: 1px solid rgba(199, 199, 199, 0.7);
   margin: 20px 0;
   margin: 0 auto;
 
@@ -282,6 +182,8 @@ ol:hover>li {
   font-size: 20px;
   width: 150px;
   margin-bottom: 20px;
+  margin-left: 350px;
+ 
 
 
 }
@@ -318,6 +220,149 @@ object-fit: cover;
 
 
 }
+
+/* 手機板 */
+
+/* @media screen and (min-width: 768px){
+ 
+
+} */
+@media screen and (max-width: 768px){
+  .photo img{
+    width: 390px !important;
+  }
+  .photo{
+    width: 390px !important;
+    height: auto;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  /* icon */
+  .head >.icon{
+    display: none;
+    
+  }
+  .head .fas .fa-shopping-cart{
+    display: block;
+  }
+
+  /* header */
+  .head{
+    height: auto;
+    position: relative;
+    
+  }
+  /* logo */
+  .head a img{
+    display: block;
+    width: 150px;
+    height: 65px;
+    margin: 3px 0;
+    
+
+  }
+  /* 漢堡選單 */
+  .head .ham{
+    display: block;
+    margin-top: 7px;
+  }
+  
+  .head ul{
+    background-color: rgb(255, 251, 251 );
+    margin: 0;
+    padding: 0;
+    width: 390px;
+    position:absolute;
+    top: 71px;
+    display: none;
+
+
+  }
+  .head a{
+    margin: 0 auto;
+  }
+  .menu{
+    display: inline !important;
+  }
+
+  .head li{
+    padding: 5px 0;
+    border-bottom: 2px solid ;
+    width: 100%;
+    text-align: center;
+    
+
+  }
+      .head li:nth-child(1){
+        border-top: 2px solid;
+      }
+    .head ol >li{
+      display: block;
+      
+      
+      margin-left: 80px;
+
+    }
+    
+
+      .space{
+        display: none;
+      }
+      .footer1{
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+      .footer1 .text{
+        width: auto;
+      }
+      .footer1 .ficon{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: auto;
+        text-align: center;
+        
+      }
+
+
+
+}
+
+
+/* 圖片大小
+@media screen and (max-width: 575.98px){
+  .photo img{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 767.98px){
+  .photo img{
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 991.8px){
+  .photo img{
+    width: 800px;
+  }
+}
+@media screen and (min-width: 991.8px) and (max-width: 1199.8px){
+  .photo img{
+    width: 980px;
+  }
+}
+
+@media screen and (min-width: 1199.8px) and (max-width: 1399.8px){
+  .photo{
+    width: 1150px;
+  }
+}
+@media screen and (min-width: 1319.8px){
+  .photo{
+    width: 1600px;
+  }
+} */
+
+
 
 
 
