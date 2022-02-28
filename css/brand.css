@@ -8,12 +8,15 @@
   /* background-color: rgb(255, 158, 158); */
   height: 629px;
   /* position: relative; */
+  width: 100%;
+  
 }
 .photo1 img{
   width:100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  display: none;
 
   
 
@@ -282,6 +285,7 @@ line-height:1.6;
   margin: 0;
   width: 390px;
   height: 260px;
+  box-shadow:none;
 }
 .story .list1{
   margin: 0;
@@ -315,6 +319,15 @@ line-height:1.6;
   position: absolute;
   bottom: -56px;
   left: 178px;
+}
+.photo1{
+  display: block;
+}
+.photo1 img{
+  display: block;
+}
+.swiper{
+  display: none;
 }
 
 }

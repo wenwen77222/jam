@@ -541,6 +541,7 @@
     .top {
       margin: 0 auto;
       flex-direction: column;
+      /* height: auto; */
       
   
       }
@@ -549,6 +550,7 @@
       } */
       .top2{
         flex-direction: column-reverse;
+        height: auto;
         
         
       }
@@ -565,6 +567,7 @@
         height: auto;
         width: 390px !important;
         margin: 0;
+        box-shadow:none;
         
         
       }
@@ -582,7 +585,7 @@
       .list1 ,.list2{
         width: 390px !important;
         margin: 0 !important;
-        /* margin: 10px auto; */
+
   
       }
       .list1 a,.list2 a{
@@ -616,6 +619,7 @@
       .top3 h1{
         font-size: 50px !important;
         padding: 20px;
+
     
       }
        .top3 h2 ,h3 {
@@ -637,11 +641,96 @@
         margin-top: 110px;
         margin-left: 133px;        
       }
-      
+      .list3{
+        /* height: auto; */
+      }
+      .swiper{
+        width: 390px!important;
+        height: 260px!important;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+        display: none;
+        
+      }
+      .swiper-slide {
+        
+      }
+      .swiper-button-next::after ,.swiper-button-prev::after{
+        margin: 0 ;
+        display: none;
 
+      }
+      .swiper-button-prev{
+        margin: 0;
+      }
+      .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,5px)) !important; 
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,5px)) !important;
+        display: none;
+     }  
+     /* .photo2{
+       display: block !important;
+       width: 390px;
+       height: 300px;
+       margin-top: 50px;
+     } */
+
+
+     
   
    
   
   }
+
+
+  /* 輪播 */
+  .swiper {
+    max-height: 629px;
+    height: 100%;
+    margin-bottom: 140px;
+    width:100%;
+    z-index: none;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    max-height: 629px;
+    height: 100%;
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next::after ,.swiper-button-prev::after{
+    color: #000000;
+  }
+
+  
+  
   
   

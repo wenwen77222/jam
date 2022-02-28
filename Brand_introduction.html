@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/hamburger.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     </head>
 <body>
@@ -62,7 +63,24 @@
 
         
            
-          <div class="photo1">
+         
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/pohot.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (1).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (2).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (3).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (4).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (5).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (1).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/bg (1).jpg" alt=""></div>
+                  <!-- <div class="swiper-slide"></div> -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="photo1">
               <img src="./img/pohot.jpg" alt="">
             
            </div>
@@ -159,7 +177,9 @@
         </div>
 
         <script src="./hamburger.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
         <script>
     
             $("button.hamburger").on("click", function(){
@@ -174,7 +194,24 @@
                     
                 
     
-            });    
+            }); 
+            
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            });
             
             
         </script>
