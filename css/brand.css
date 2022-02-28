@@ -9,6 +9,7 @@
   height: 629px;
   /* position: relative; */
   width: 100%;
+  display: none;
   
 }
 .photo1 img{
@@ -331,3 +332,52 @@ line-height:1.6;
 }
 
 }
+
+
+ /* 輪播 */
+ .swiper {
+  max-height: 629px;
+  height: 100%;
+  margin-bottom: 140px;
+  width:100%;
+  z-index: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-height: 629px;
+  height: 100%;
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next::after ,.swiper-button-prev::after{
+  color: #000000;
+}
+
