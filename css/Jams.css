@@ -7,19 +7,22 @@
     margin-top: 80px;
     padding:80px 140px;
     /* background-color: rgb(22, 22, 22); */
-    display: flex
+    display: flex;
+    height: auto;
 
   }
 
   .shop img{
     height: 561px;
-    width: 675px;
+    max-width: 675px;
+    width: 100%;
 
   }
 
-  .shop_test{
+  .shop_text{
     height: 561px;
-    width: 471px;
+    max-width: 471px;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     padding-top: 60px;
     padding-left: 100px;
@@ -55,22 +58,20 @@
 
 .shop_test .box_1{
   height: 55px;
-  display: flex;
+  /* display: flex; */
   margin: 20px 0;
   
 
 }
 
 
-.decrase{
+ .decrase{
     height: 55px;
     width: 53px;
     border: 1px solid rgb(0, 0, 0);
     line-height: 40px;
     border-right: none;
     float: left;
-    padding-left: 17px;
-    padding-top: 8px;
     background-color: white;
 
 }
@@ -80,19 +81,18 @@
   width: 73px;
   border: 1px solid rgb(0, 0, 0);  
   float: left; 
+  text-align: center;
 }
 
 .plus{
   height: 55px;
-  width: 53px;
-  border: 1px solid rgb(0, 0, 0);
-  line-height: 40px;
-  border-left: none;
-  padding-left: 17px;
-  padding-top: 8px;
-  background-color: white;
-  margin-right: 40px;
-
+    width: 53px;
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 40px;
+    /* border-right: none; */
+    float: left;
+    background-color: white;
+    
 
 } 
 
@@ -106,8 +106,49 @@ button{
   color: white;
   /* text-align: center; */
   border: 1px solid #000000;
-
+  margin-left: 20px;
 }
 button:hover{
   background-color: #F5C554;
+} 
+
+
+@media screen and (max-width: 768px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .shop{
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    flex: 1;
+   
+  }
+  .shop img{
+    width: auto;
+    height: auto;
+  }
+
+  .shop_text{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+
+  }
+  .shop_text h1{
+    font-size: 35px;
+    margin: 0;
+    margin: 5px;
+
+  }
+  .shop_text h3{
+    font-size: 16px;
+  } 
+
 }
