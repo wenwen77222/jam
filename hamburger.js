@@ -19,3 +19,17 @@
   //   });
   
   // });
+
+//   $("button.hamburger").on("click", function(){
+            
+           
+//     $(this).toggleClass("is-active");
+//     $('.head ul').toggleClass("menu");
+    
+
+//         // $("ul").slideDown();
+
+        
+    
+
+// });   

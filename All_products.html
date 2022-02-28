@@ -13,10 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hamburger.css">
+
 </head>
 <body>
-    <button type="button" class="btn_switch">導覽列縮合按鈕</button>
     <div class="head">
+        <div class="ham">
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
         <a href="index.html"><img src="./img/nojams_logo.png" alt="" ></a>
        <ul>
             <li>
@@ -56,13 +64,14 @@
             <input type="text" placeholder="search">
             <button><i class="fas fa-search"></i></button>  
    
-              <select name="" id=""> 
-                  <option value="">商品排序</option>
-                  <option value="價格高到低">價格高到低</option>
-                  <option value="價格低至高">價格低至高</option>
-              </select>
+              
           
         </div>
+        <select name="" id=""> 
+            <option value="">商品排序</option>
+            <option value="價格高到低">價格高到低</option>
+            <option value="價格低至高">價格低至高</option>
+        </select>
            
      </div>
 
@@ -73,7 +82,7 @@
                 <a href="#">熱銷推薦</a>
             </li>      
             <li>
-                <a href="Jams.html">手工果醬</a>
+                <a href="#">手工果醬</a>
                 <ol>
                 <li><a href="#">酸酸甜甜 </a></li>
                 <li><a href="#">甜蜜蜜</a></li>
@@ -102,6 +111,7 @@
                 <a href="#">
                     <img src="./img/product.jpg" alt="">
                     <h4>甜甜的柑橘醬</h4>
+                    
                  </a>
                 <p>$230</p>
              </div>
@@ -189,6 +199,29 @@
        
 
     </div>
+
+
+    <script src="./hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $("button.hamburger").on("click", function(){
+            
+           
+            $(this).toggleClass("is-active");
+            $('.head ul').toggleClass("menu");
+            
+
+                // $("ul").slideDown();
+       
+                
+            
+
+        });    
+        
+        
+    </script>
+
 
 </body>
 </html>
